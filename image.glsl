@@ -17,8 +17,9 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 
     float x = fragCoord.x;
     float y = fragCoord.y;
-    float t = 
-    float p = sin(x)+cos(y+);
+    float t = iTime*2.0;
+
+    float p = sin(x/10.0)+cos(y/10.0+cos(x+t));
 
     fragColor = vec4(p, p, p, 1.0);
 }
