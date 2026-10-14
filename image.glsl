@@ -15,9 +15,10 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     float d = length(fragCoord - centre) / iResolution.y;
     col *= smoothstep(0.35, 0.3, d) * 0.5 + 0.5;
 
-    
+    float x = fragCoord.x;
+    float y = fragCoord.y;
+    float t = 
+    float p = sin(x)+cos(y+);
 
-    vec4 p = sin()
-
-    fragColor = vec4(col, 1.0);
+    fragColor = vec4(p, p, p, 1.0);
 }
